@@ -1,0 +1,49 @@
+.main-header {
+  @apply fixed w-full top-0 left-0 z-50 bg-white shadow-sm transition-all duration-300;
+}
+
+.header-scrolled {
+  @apply shadow-md;
+}
+
+.header-container {
+  @apply flex items-center justify-between py-4;
+}
+
+.logo-box {
+  @apply flex items-center;
+}
+
+.nav-menu {
+  @apply hidden md:flex items-center space-x-8;
+}
+
+.nav-link {
+  @apply text-gray-600 hover:text-gray-900 font-medium transition-colors;
+}
+
+.nav-cta {
+  @apply ml-8;
+}
+
+.mobile-menu {
+  @apply md:hidden;
+}
+
+.mobile-menu-button {
+  @apply p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100;
+}
+
+.mobile-menu-content {
+  @apply absolute top-full left-0 w-full bg-white border-t border-gray-200 shadow-lg;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    @apply hidden;
+  }
+  
+  .mobile-menu {
+    @apply block;
+  }
+}
